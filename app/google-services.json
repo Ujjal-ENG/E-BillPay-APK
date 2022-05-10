@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "303726025186",
+    "project_id": "e-billpay",
+    "storage_bucket": "e-billpay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303726025186:android:d2aba4c94adfb55d8041bb",
+        "android_client_info": {
+          "package_name": "com.example.e_billpay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303726025186-1sm6hm8123j6sn8fd4f4t4b519duah3f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJtqEkS3JmVj17wlAGw9bM2zYd76QmGsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303726025186-1sm6hm8123j6sn8fd4f4t4b519duah3f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

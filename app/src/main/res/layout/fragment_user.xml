@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerPart_UI.User.user">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="hello.json"
+        app:lottie_loop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/visiblity"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="40dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="8dp"
+                android:visibility="invisible"
+                android:id="@+id/get_details">
+                <Spinner
+                    android:id="@+id/user_spinne3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:dropDownWidth="match_parent"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:spinnerMode="dropdown"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/get_details_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="3"
+                    android:minHeight="40dp"
+                    android:text="Get Details"
+                    tools:layout_editor_absoluteX="117dp"
+                    tools:layout_editor_absoluteY="107dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Customer Name:"
+                            android:textColor="#000"
+                            android:textSize="25dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Customer Number:"
+                            android:textColor="#000"
+                            android:textSize="25dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Meter Number:"
+                            android:textColor="#000"
+                            android:textSize="25dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Pending Amount:"
+                            android:textColor="#000"
+                            android:textSize="25dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Last Unit Count:"
+                            android:textColor="#000"
+                            android:textSize="25dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/payment_satus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Payment Status:"
+                            android:textColor="#000"
+                            android:textSize="25dp"
+                            android:textStyle="bold|italic"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:orientation="vertical"
+                        android:textColor="#000"
+                        android:textSize="25dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/dis_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Ujjal"
+                            android:textColor="@color/purple_500"
+                            android:textSize="25dp"
+                            android:textStyle="bold|italic"/>
+
+                        <TextView
+                            android:id="@+id/dis_cno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="01871687138"
+                            android:textColor="@color/purple_500"
+                            android:textSize="25dp"
+                            android:textStyle="bold|italic"/>
+
+                        <TextView
+                            android:id="@+id/dis_mno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="2580"
+                            android:textColor="@color/purple_500"
+                            android:textSize="25dp"
+                            android:textStyle="bold|italic"/>
+
+                        <TextView
+                            android:id="@+id/dis_pending_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="2198 Taka"
+                            android:textColor="@color/purple_500"
+                            android:textSize="25dp"
+                            android:textStyle="bold|italic"/>
+
+                        <TextView
+                            android:id="@+id/dis_last_unit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="345 UNIT"
+                            android:textColor="@color/purple_500"
+                            android:textSize="25dp"
+                            android:textStyle="bold|italic"/>
+                        <TextView
+                            android:id="@+id/staus_payment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="NOT PAID"
+                            android:textColor="@color/red"
+                            android:textSize="25dp"
+                            android:textStyle="bold|italic"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_pay_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:text="pay bill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+    <Button
+        android:id="@+id/btn_bill_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:text="bill details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+    <ImageView
+        android:id="@+id/ujjalpic"
+        android:layout_width="242dp"
+        android:layout_height="207dp"
+        android:src="@drawable/ujjal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.732" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toEndOf="@+id/ujjalpic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654" />
+</androidx.constraintlayout.widget.ConstraintLayout>

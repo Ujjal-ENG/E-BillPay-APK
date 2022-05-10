@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.e_billpay.CustomerPart_UI.information.information"
+        android:label="User Information"
+        tools:layout="@layout/fragment_information" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.e_billpay.CustomerPart_UI.User.user"
+        android:label="User Part"
+        tools:layout="@layout/fragment_user" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.e_billpay.CustomerPart_UI.generate_bill.generate_bill"
+        android:label="Generate Bill"
+        tools:layout="@layout/fragment_generate_bill" />
+</navigation>
